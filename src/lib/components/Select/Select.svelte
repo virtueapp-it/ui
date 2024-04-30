@@ -5,7 +5,7 @@
   import { tv } from "tailwind-variants"
   import ctx from "./ctx.js"
 
-  type $$Props = CreateSelectProps<boolean> & AsChildType
+  type $$Props = Omit<CreateSelectProps<boolean>, "arrowSize"> & AsChildType
 
   export let asChild: $$Props["asChild"] = false
   export let forceVisible: $$Props["forceVisible"] = true

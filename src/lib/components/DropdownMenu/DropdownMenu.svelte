@@ -2,7 +2,7 @@
   import { type CreateDropdownMenuProps } from "@melt-ui/svelte"
   import ctx from "./ctx.js"
 
-  type $$Props = CreateDropdownMenuProps
+  type $$Props = Omit<CreateDropdownMenuProps, "arrowSize">
 
   export let forceVisible: $$Props["forceVisible"] = true
 
