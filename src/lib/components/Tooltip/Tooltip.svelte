@@ -2,7 +2,7 @@
   import { type CreateTooltipProps } from "@melt-ui/svelte"
   import ctx from "./ctx.js"
 
-  type $$Props = CreateTooltipProps
+  type $$Props = Omit<CreateTooltipProps, "arrowSize">
 
   export let forceVisible: $$Props["forceVisible"] = true
 

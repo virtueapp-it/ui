@@ -2,7 +2,7 @@
   import { type CreateContextMenuProps } from "@melt-ui/svelte"
   import ctx from "./ctx.js"
 
-  type $$Props = CreateContextMenuProps
+  type $$Props = Omit<CreateContextMenuProps, "arrowSize">
 
   export let forceVisible: $$Props["forceVisible"] = true
 
